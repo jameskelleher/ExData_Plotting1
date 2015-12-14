@@ -13,7 +13,7 @@ par(col="blue")
 with(dt, lines(Datetime, Sub_metering_3))
 
 par(col="black")
-legend("topright", seg.len=2, lwd=1, col=c("black", "red", "blue"), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+legend("topright", seg.len=2, lwd=1, xjust=1, col=c("black", "red", "blue"), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 
 dev.copy(png, "plot3.png")
 dev.off()
