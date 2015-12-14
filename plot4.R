@@ -18,7 +18,10 @@ with(dt, {
   par(col="blue")
   lines(Datetime, Sub_metering_3)
   par(col="black")
-  legend("topright", bty="n", seg.len=2, lwd=1, col=c("black", "red", "blue"), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+  legend("topright", bty="n", inset=c(.15, 0), seg.len=2, lwd=1, col=c("black", "red", "blue"), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
   
-  plot(Datetime, Global_reactive_power, type="l", xlab="", ylab="Global_reactive_power")
+  plot(Datetime, Global_reactive_power, type="l", xlab="datetime", ylab="Global_reactive_power")
 })
+
+dev.copy(png, "plot4.png")
+dev.off()
